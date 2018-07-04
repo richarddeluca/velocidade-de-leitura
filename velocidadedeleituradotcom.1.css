@@ -1,0 +1,134 @@
+body {
+  /* background-image: url(img/books-background.jpg); */
+  background-color: #9900ad;
+  text-align: center;
+  /* color: white; */
+  font-size: 110%;
+}
+
+#background {
+  transition: background 1s;
+}
+
+h1 {
+  color: white;
+}
+
+#tudo {
+  /* background-color: #79ffffb7; */
+  margin-top: 14%;
+}
+
+
+
+body {
+  margin: 20px auto;
+  padding: 40px;
+  font-family: sans-serif;
+  width: 80%;
+  max-width: 1000px;
+  margin: 20px auto;
+}
+
+h1 {
+	margin: 0;
+	font-weight: normal;
+	text-transform: uppercase;
+	line-height: 1.1;
+	padding: 20px 0;
+}
+
+
+label {
+  margin-right: 15px;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid #999;
+  transition: 0.2s all linear;
+  outline: none;
+  margin-right: 5px;
+
+  position: relative;
+  top: 4px;
+}
+
+input:checked {
+  border: 6px solid black;
+}
+
+
+button,
+legend {
+  color: white;
+  background-color: rgb(26, 26, 26);
+  padding: 5px 10px;
+  border-radius: 0;
+  border: 0;
+  font-size: 14px;
+}
+
+button {
+    margin: 10px 0;
+}
+
+button:hover,
+button:focus {
+  color: #999;
+}
+
+button:active {
+  background-color: white;
+  color: black;
+  outline: 1px solid black;
+}
+
+.square {
+	width: 30%;
+	background: purple;
+	padding-bottom: 30%;
+	float: left;
+	margin: 1.6%;
+	border-radius: 15%;
+	transition: background 0.4s;
+	--webkit-transition: background 0.4s;
+	--moz-transition: background 0.4s;
+}
+
+
+.trechos {
+  display: none;
+  position: static;
+  opacity: 1;
+  transition: opacity 1s linear;
+  text-align: justify;
+}
+
+#form {
+  text-align: left;
+}
+
+/* não deu certo */
+#botaoTerminar {
+  text-align: center;
+}
+
+#botaoVoltar {
+  display: none;
+}
+
+#parteUm {
+  display: none;
+}
+
+#mediaDeLeitura {
+  font-size: 130%;
+}
