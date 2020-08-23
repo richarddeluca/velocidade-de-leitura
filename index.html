@@ -4,157 +4,214 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Velocidade de Leitura</title>
+  <title> Velocidade de Leitura</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--Bootstrap-->
-  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" />
-  <!--jQuery-->
-  <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-    crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" /> -->
   <!--CSS-->
   <link rel="stylesheet" type="text/css" media="screen" href="velocidadedeleituradotcom.1.css" />
-  <!-- <link rel="stylesheet" type="text/css" href="css.css" /> -->
 </head>
 
 <body id="background">
-  <!--Colocarei navbar aqui-->
+  <div id="demo-top-bar">
+    <h6 id="demo-bar-badge">
+      <a href="index.html">Velocidade de Leitura</a>
+    </h6>
+  </div>
+  <div id="tudo">
 
-  <!-- <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    </nav> -->
-
-  <!--jumbotron-->
-
-  <!-- <div class="container">
-    <div class="jumbotron">
-      <h1>Teste sua velocidade de leitura</h1>
-      <h3>Vai lá campeão</h3>
-    </div>
-  </div> -->
-
-
-  <div class="container" id="tudo">
-
-      <!--____ PARTE FRONT ____-->
+    <!--____ PARTE FRONT ____-->
 
     <div id="parteFront">
-      <h1 onclick="botaoFront()">Teste sua<br>velocidade de leitura</h1>
+      <h1 id=textoFront onclick="botaoFront()">Teste sua<br>velocidade de leitura</h1>
+      <button id="botaoFront" onclick="botaoFront()">Continue</button>
+      <br>
+      <a href='treino.html' style="color: black;">ou treine sua leitura aqui</a>
     </div>
 
-      <!--____ PARTE UM ____-->
+    <!--____ PARTE UM ____-->
     <div id="parteUm">
       <p>Escolha um livro que você nunca leu. Apresentaremos um trecho desse livro.</p>
       <p>Logo após terminar, aperte terminei.</p>
-
-      <!-- selecionar um de três livros-->
-      <form id="form">
-        <fieldset>
-          <legend>!!!</legend>
-          <div>
-            <input type="radio" id="livro1" name="livros" value="1" checked>
-            <label for="contactChoice1">Histórias da Meia-noite - Machado de Assis</label>
-          </div>
-          <div>
-            <input type="radio" id="livro2" name="livros" value="2">
-            <label for="contactChoice2">A Metamorfose - Franz Kafka</label>
-          </div>
-          <div>
-            <input type="radio" id="livro3" name="livros" value="3">
-            <label for="contactChoice3">Amar, Verbo Intransitivo - Mario de Andrade</label>
-          </div>
-        </fieldset>
-      </form>
-
-      <!-- selecionar outros livros -->
 
       <!-- Botão para começar o teste-->
       <div>
         <button id="botaoComecar" onclick="botaoComecar()">Começar</button>
       </div>
+
+      <!-- selecionar um de três livros-->
+      <form class="form" style="overflow-y: auto;">
+        <div class="inputGroup">
+          <input id="livro1" name="livros" type="radio" value="1" />
+          <label for="livro1">Yes Yes Yes Yes Yes Yes </label>
+        </div>
+        <div class="inputGroup">
+          <input id="livro2" name="livros" type="radio" value="2" />
+          <label for="livro2">Yes Yes Yes Yes Yes </label>
+        </div>
+        <div class="inputGroup">
+          <input id="livro3" name="livros" type="radio" value="3" />
+          <label for="livro3">Yes Yes Yes Yes </label>
+        </div>
+        <div class="inputGroup">
+          <input id="livro4" name="livros" type="radio" value="4" />
+          <label for="livro4">Yes Yes Yes </label>
+        </div>
+        <div class="inputGroup">
+          <input id="livro5" name="livros" type="radio" value="5" />
+          <label for="livro5">Yes Yes </label>
+        </div>
+        <div class="inputGroup">
+          <input id="livro6" name="livros" type="radio" value="6" />
+          <label for="livro6">Noooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo</label>
+        </div>
+
+      </form>
+
+      <p>Após terminar vamos mostrar quantas palavras por minuto você leu</p>
+
     </div>
-<!--____ PARTE DOIS ____-->
+    <!--____ PARTE DOIS ____-->
     <div id="parteDois">
-    <!-- estou fazendo o trecho 1 -->
-    <div class="trechos" id="trechoUm">
-      <p>
-          Há cerca de dezesseis anos, desembarcava no Rio de Janeiro, vindo da Europa, o Sr. Camilo Seabra, goiano de nascimento, que ali fora estudar medicina e voltava agora com o diploma na algibeira e umas saudades no coração. Voltava depois de uma ausência de oito anos, tendo visto e admirado as principais coisas que um homem pode ver e admirar por lá, quando não lhe falta gosto nem meios. Ambas as coisas possuía, e se tivesse também, não digo muito, mas um pouco mais de juízo, houvera gozado melhor do que gozou, e com justiça poderia dizer que vivera.<br>
-          Não abonava muito os seus sentimentos patrióticos o rosto com que entrou a barra da capital brasileira. Trazia-o fechado e merencório, como quem abafa em si alguma coisa que não é exatamente a bem-aventurança terrestre. Arrastou um olhar aborrecido pela cidade, que se ia desenrolando à proporção que o navio se dirigia ao ancoradouro. Quando veio a hora de desembarcar fê-lo com a mesma alegria com que o réu transpõe os umbrais do cárcere. O escaler afastou-se do navio em cujo mastro flutuava uma bandeira tricolor; Camilo murmurou consigo:<br>
+      <!-- estou fazendo o trecho 1 -->
+      <div class="trechos" id="trechoUm">
+        <p>
+          Há cerca de dezesseis anos, desembarcava no Rio de Janeiro, vindo da Europa, o Sr. Camilo Seabra, goiano de
+          nascimento, que ali fora estudar medicina e voltava agora com o diploma na algibeira e umas saudades no
+          coração. Voltava depois de uma ausência de oito anos, tendo visto e admirado as principais coisas que um homem
+          pode ver e admirar por lá, quando não lhe falta gosto nem meios. Ambas as coisas possuía, e se tivesse também,
+          não digo muito, mas um pouco mais de juízo, houvera gozado melhor do que gozou, e com justiça poderia dizer
+          que vivera.<br>
+          Não abonava muito os seus sentimentos patrióticos o rosto com que entrou a barra da capital brasileira.
+          Trazia-o fechado e merencório, como quem abafa em si alguma coisa que não é exatamente a bem-aventurança
+          terrestre. Arrastou um olhar aborrecido pela cidade, que se ia desenrolando à proporção que o navio se dirigia
+          ao ancoradouro. Quando veio a hora de desembarcar fê-lo com a mesma alegria com que o réu transpõe os umbrais
+          do cárcere. O escaler afastou-se do navio em cujo mastro flutuava uma bandeira tricolor; Camilo murmurou
+          consigo:<br>
           — Adeus, França!<br>
           Depois envolveu-se num magnífico silêncio e deixou-se levar para terra.
-      </p>
-    </div>
+        </p>
+      </div>
 
-    <!-- estou fazendo o trecho 2 -->
-    <div class="trechos" id="trechoDois">
-      <p>
-          Olhou para o despertador, que fazia tique-taque na cômoda. Pai do Céu! — pensou. Eram seis e meia e os ponteiros moviam-se em silêncio, até passava da meia hora, era quase um quarto para as sete. O despertador não teria tocado? Da cama, via-se que estava corretamente regulado para as quatro; claro que devia ter tocado. Sim, mas seria possível dormir sossegadamente no meio daquele barulho que trespassava os ouvidos? Bem, ele não tinha dormido sossegadamente; no entanto, aparentemente, se assim era, ainda devia ter sentido mais o barulho. Mas que faria agora? o próximo trem saía às sete; para o apanhar tinha de correr como um doido, as amostras ainda não estavam embrulhadas e ele próprio não se sentia particularmente fresco e ativo. E, mesmo que apanhasse o trem, não conseguiria evitar uma reprimenda do chefe, visto que o porteiro da firma havia de ter esperado o trem das cinco e há muito teria comunicado a sua ausência. O porteiro era um instrumento do patrão, invertebrado e idiota. Bem, suponhamos que dizia que estava doente? Mas isso seria muito desagradável e pareceria suspeito, porque, durante cinco anos de emprego, nunca tinha estado doente. O próprio patrão certamente iria lá a casa com o médico da Previdência, repreenderia os pais pela preguiça do filho e poria de parte todas as desculpas, recorrendo ao médico da Previdência, que, evidentemente, considerava toda a humanidade um bando de falsos doentes perfeitamente saudáveis. E enganaria assim tanto desta vez? Efetivamente, Gregório sentia-se bastante bem, à parte uma sonolência que era perfeitamente supérflua depois de um tão longo sono, e sentia-se mesmo esfomeado.
-      </p>
-    </div>
+      <!-- estou fazendo o trecho 2 -->
+      <div class="trechos" id="trechoDois">
+        <p>
+          Olhou para o despertador, que fazia tique-taque na cômoda. Pai do Céu! — pensou. Eram seis e meia e os
+          ponteiros moviam-se em silêncio, até passava da meia hora, era quase um quarto para as sete. O despertador não
+          teria tocado? Da cama, via-se que estava corretamente regulado para as quatro; claro que devia ter tocado.
+          Sim, mas seria possível dormir sossegadamente no meio daquele barulho que trespassava os ouvidos? Bem, ele não
+          tinha dormido sossegadamente; no entanto, aparentemente, se assim era, ainda devia ter sentido mais o barulho.
+          Mas que faria agora? o próximo trem saía às sete; para o apanhar tinha de correr como um doido, as amostras
+          ainda não estavam embrulhadas e ele próprio não se sentia particularmente fresco e ativo. E, mesmo que
+          apanhasse o trem, não conseguiria evitar uma reprimenda do chefe, visto que o porteiro da firma havia de ter
+          esperado o trem das cinco e há muito teria comunicado a sua ausência. O porteiro era um instrumento do patrão,
+          invertebrado e idiota. Bem, suponhamos que dizia que estava doente? Mas isso seria muito desagradável e
+          pareceria suspeito, porque, durante cinco anos de emprego, nunca tinha estado doente. O próprio patrão
+          certamente iria lá a casa com o médico da Previdência, repreenderia os pais pela preguiça do filho e poria de
+          parte todas as desculpas, recorrendo ao médico da Previdência, que, evidentemente, considerava toda a
+          humanidade um bando de falsos doentes perfeitamente saudáveis. E enganaria assim tanto desta vez?
+          Efetivamente, Gregório sentia-se bastante bem, à parte uma sonolência que era perfeitamente supérflua depois
+          de um tão longo sono, e sentia-se mesmo esfomeado.
+        </p>
+      </div>
 
-    <!-- estou fazendo o trecho 3 -->
-    <div class="trechos" id="trechoTres">
-      <p>A porta do quarto se abriu e eles saíram no corredor. Calçando as luvas Sousa Costa largou por despedida:<br>
-        – Está frio.<br>
-        Ela muito correta e simples:<br>
-        – Estes fins de inverno são perigosos em São Paulo.<br>
-        Lembrando mais uma coisa reteve a mão de adeus que o outro lhe estendia.<br>
-        – E, senhor... sua esposa? está avisada?<br>
-        – Não! A senhorita compreende... ela é mãe. Esta nossa educação brasileira... Além do mais com três meninas em casa!...<br>
-        – Peço-lhe que avise sua esposa, senhor. Não posso compreender tantos mistérios. Se é para bem do rapaz.<br>
-        – Mas senhorita...<br>
-        – Desculpe insistir. É preciso avisá-la. Não me agradaria ser tomada por aventureira, sou séria. E tenho 35 anos, senhor. Certamente não irei se sua esposa não souber o que vou fazer lá. Tenho a profissão que uma fraqueza me permitiu exercer, nada mais nada menos. É uma profissão.<br>
-        Falava com a voz mais natural desse mundo, mesmo com certo orgulho que Sousa Costa percebeu sem compreender. Olhou pra ela admirado e, jurando não falar nada à mulher, prometeu.<br>
-        Elza viu ele abrir a porta da pensão. Pâam... Entrou de novo no quartinho ainda agitado pela presença do estranho. Lhe deu um olhar de confiança. Tudo foi sossegando pouco a pouco. Penca de livros sobre a escrivaninha, um piano. O retrato de Wagner. O retrato de Bismarck.<br>
-        
-        
-        
-        Terça-feira o táxi parou no portão da Vila Laura. Elza apeou ajeitando o casaco, toda de pardo, enquanto o motorista botava as duas malas, as caixas e embrulhos no chão.<br>
-        Era esperada. Já carregavam as malas pra dentro. Uns olhos de 12 anos em que uma gaforinha americana enroscava a galharia negro-azul apareceu na porta. E no silêncio pomposo do casão o xilofone tiniu:<br>
-        – A governanta está aí! Mamãe! a governanta está aí!<br>
-        – Já sei, menina! Não grite assim!<br>
-        Elza discutia o preço da corrida.<br>
-        – ...e com tantas malas, a senhora...<br>
-        – É muito. Aqui estão cinco. Passe bem. Ah, a gorjeta...<br>
-        Deitou quinhentos réis na mão do motorista. Atravessou as roseiras festivas do jardim.<br>
-      </p>
-    </div>
+      <!-- estou fazendo o trecho 3 -->
+      <div class="trechos" id="trechoTres">
+        <p>A porta do quarto se abriu e eles saíram no corredor. Calçando as luvas Sousa Costa largou por despedida:<br>
+          – Está frio.<br>
+          Ela muito correta e simples:<br>
+          – Estes fins de inverno são perigosos em São Paulo.<br>
+          Lembrando mais uma coisa reteve a mão de adeus que o outro lhe estendia.<br>
+          – E, senhor... sua esposa? está avisada?<br>
+          – Não! A senhorita compreende... ela é mãe. Esta nossa educação brasileira... Além do mais com três meninas em
+          casa!...<br>
+          – Peço-lhe que avise sua esposa, senhor. Não posso compreender tantos mistérios. Se é para bem do rapaz.<br>
+          – Mas senhorita...<br>
+          – Desculpe insistir. É preciso avisá-la. Não me agradaria ser tomada por aventureira, sou séria. E tenho 35
+          anos, senhor. Certamente não irei se sua esposa não souber o que vou fazer lá. Tenho a profissão que uma
+          fraqueza me permitiu exercer, nada mais nada menos. É uma profissão.<br>
+          Falava com a voz mais natural desse mundo, mesmo com certo orgulho que Sousa Costa percebeu sem compreender.
+          Olhou pra ela admirado e, jurando não falar nada à mulher, prometeu.<br>
+          Elza viu ele abrir a porta da pensão. Pâam... Entrou de novo no quartinho ainda agitado pela presença do
+          estranho. Lhe deu um olhar de confiança. Tudo foi sossegando pouco a pouco. Penca de livros sobre a
+          escrivaninha, um piano. O retrato de Wagner. O retrato de Bismarck.<br>
 
-    <!--Botão para terminar o teste-->
+
+
+          Terça-feira o táxi parou no portão da Vila Laura. Elza apeou ajeitando o casaco, toda de pardo, enquanto o
+          motorista botava as duas malas, as caixas e embrulhos no chão.<br>
+          Era esperada. Já carregavam as malas pra dentro. Uns olhos de 12 anos em que uma gaforinha americana enroscava
+          a galharia negro-azul apareceu na porta. E no silêncio pomposo do casão o xilofone tiniu:<br>
+          – A governanta está aí! Mamãe! a governanta está aí!<br>
+          – Já sei, menina! Não grite assim!<br>
+          Elza discutia o preço da corrida.<br>
+          – ...e com tantas malas, a senhora...<br>
+          – É muito. Aqui estão cinco. Passe bem. Ah, a gorjeta...<br>
+          Deitou quinhentos réis na mão do motorista. Atravessou as roseiras festivas do jardim.<br>
+        </p>
+      </div>
+
+      <!-- estou fazendo o trecho 4 -->
+
+      <div class="trechos" id="trechoQuatro">
+        <p>
+          Pastel
+        </p>
+      </div>
+
+      <!-- estou fazendo o trecho 5 -->
+      <div class="trechos" id="trechoCinco">
+        <p>
+          Chocolate
+        </p>
+      </div>
+
+      <!-- estou fazendo o trecho 6 -->
+      <div class="trechos" id="trechoSeis">
+        <p>Grão de bico
+        </p>
+      </div>
+
+      <!--Botão para terminar o teste-->
+      <div>
+        <button id="botaoTerminar" class="trechos" onclick="botaoTerminar()">Terminei</button>
+      </div>
+    </div>
+    <!--____ PARTE TRÊS ____-->
     <div>
-      <button id="botaoTerminar" class="trechos" onclick="botaoTerminar()">Terminei</button>
+      <p id="segundos"></p>
+      <p id="mediaDeLeitura"></p>
+      <div id="iframe">
+        <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"
+          src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=livrosdepnl-20&marketplace=amazon&region=BR&placement=B07QVHPSVZ&asins=B07QVHPSVZ&linkId=2d420a8f7aca04cdd86e41b42fac1184&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+        </iframe>
+        <iframe scrolling="no" frameborder="0"
+          src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=livrosdepnl-20&marketplace=amazon&region=BR&placement=8576572087&asins=8576572087&linkId=2df3645e9de8b7b87db3431ddb7802bf&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+        </iframe>
+        <iframe scrolling="no" frameborder="0"
+          src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=livrosdepnl-20&marketplace=amazon&region=BR&placement=B076V3CYVS&asins=B076V3CYVS&linkId=713d4bc5667c88a4e20a3b3a4d0e1b19&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+        </iframe>
+        <iframe scrolling="no" frameborder="0"
+          src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=livrosdepnl-20&marketplace=amazon&region=BR&placement=B075C71B85&asins=B075C71B85&linkId=8ba28e7a5332e7b5d09d947ff8a6d0a1&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+        </iframe>
+        <iframe scrolling="no" frameborder="0"
+          src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=livrosdepnl-20&marketplace=amazon&region=BR&placement=8539004119&asins=8539004119&linkId=3d447d42705222f4be09f7356a0427ab&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+        </iframe>
+        <iframe scrolling="no" frameborder="0"
+          src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=livrosdepnl-20&marketplace=amazon&region=BR&placement=8547000240&asins=8547000240&linkId=f136e9bf0e8f27b37a0d0473170f79ed&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+        </iframe>
+        <iframe scrolling="no" frameborder="0"
+        src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=livrosdepnl-20&marketplace=amazon&region=BR&placement=B0186FEYKW&asins=B0186FEYKW&linkId=303d47b6b8f11fe3acaacfe0e6ebbe47&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+        </iframe>
+        <!-- <iframe scrolling="no" frameborder="0" src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=livrosdepnl-20&marketplace=amazon&region=BR&placement=853900383X&asins=853900383X&linkId=bac24c4e645051661230d8587a5e6021&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+    <iframe id="iframe" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=livrosdepnl-20&marketplace=amazon&region=BR&placement=8539005352&asins=8539005352&linkId=dd92db7184fe47ffcc7a1de26bbf4b75&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+    <iframe src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=livrosdepnl-20&marketplace=amazon&region=BR&placement=8546500452&asins=8546500452&linkId=4f12a24ecab6d6a719d2253f3cdb1214&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe> -->
+      </div>
     </div>
   </div>
-<!--____ PARTE TRÊS ____-->
-  <div>
-    <p id="segundos"></p>
-    <p id="mediaDeLeitura"></p>
-  </div>
-</div>
   <script src="velocidadedeleituradotcom.1.js"></script>
 </body>
 

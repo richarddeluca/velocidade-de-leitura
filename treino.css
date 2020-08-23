@@ -1,0 +1,65 @@
+html{
+    background-color: rgb(255, 255, 255);
+}
+
+br{
+    margin: 100px;
+}
+
+div.container {
+    height: 80%;
+    width: 80%;
+    display: flex;
+    margin: 0 12% 0 auto;
+    font-size: 24px;
+
+}
+
+div.container p {
+    margin: 0.5em;
+}
+
+div.op1 {
+    width: 8em;
+    display: inline-block;
+    /* font-size: 3vw; */
+    padding: 5vw 0vw 5vw 0vw;
+}
+
+div.op2 {
+    width: 8em;
+    display: inline-block;
+    margin-right: 0vw;
+    /* font-size: 3vw; */
+    padding: 5vw 0vw 5vw 0vw;
+}
+
+div.op3 {
+    width: 8em;
+    display: inline-block;
+    margin-right: 0vw;
+    /* font-size: 3vw; */
+    padding: 5vw 0vw 5vw 0vw;
+}
+
+div.op4 {
+    width: 8em;
+    display: inline-block;
+    margin-right: 0vw;
+    /* font-size: 3vw; */
+    padding: 5vw 0vw 5vw 0vw;
+}
+
+div.menu {
+    background-color: rgb(66, 45, 255);
+    float: right;
+    padding: 5vw 0vw 5vw 0vw;
+    position: relative;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+div.menu button{
+    }
