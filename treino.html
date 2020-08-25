@@ -14,18 +14,19 @@
         <div class="op3"></div>
         <div class="op4"></div>
         <div class="menu">
-            <form>
-                <input type="radio" name="letras" id="radio23" value="listaSeparada2e3">
-                <label for="listaSeparada2e3">2</label>
-                <input type="radio" name="letras" id="radio45" value="listaSeparada4e5" checked>
-                <label for="listaSeparada4e5">4</label>
-                <input type="radio" name="letras" id="radio67" value="listaSeparada6e7">
-                <label for="listaSeparada6e7">6</label>
-                <input type="radio" name="letras" id="radio89" value="listaSeparada8e9">
-                <label for="listaSeparada8e9">8</label>
-                <input type="radio" name="letras" id="radio10" value="listaSeparada10eMais">
-                <label for="listaSeparada10eMais">10</label>
-              </form>
+            <h3>Nível</h3>
+                <input type="radio"  name="letras" id="radio23" value="listaSeparada2e3">
+                <label class="label" for="radio23"><span>1</span></label>
+                <input type="radio"  name="letras" id="radio45" value="listaSeparada4e5" checked>
+                <label class="label" for="radio45"><span>2</span></label>
+                <input type="radio"  name="letras" id="radio67" value="listaSeparada6e7">
+                <label class="label" for="radio67"><span>3</span></label>
+                <input type="radio"  name="letras" id="radio89" value="listaSeparada8e9">
+                <label class="label" for="radio89"><span>4</span></label>
+                <input type="radio"  name="letras" id="radio10" value="listaSeparada10eMais">
+                <label class="label" for="radio10"><span>5</span></label>
+              <br>  
+              <input type="range" name="metronomo" id="metronomo">
             <button id="botaoDeMudanca" onclick="gerarPalavras()">
                 Trocar Palavras
             </button>
